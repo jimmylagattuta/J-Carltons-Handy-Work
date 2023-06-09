@@ -3,6 +3,6 @@ class Api::V1::HomeController < ApplicationController
 		puts "*" * 10
 		puts "hello"
 		puts "*" * 10
-		render json: { message: "Hello" }
+		render json: "Hello"
 	end
 end
