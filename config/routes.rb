@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # root "api/v1/home#hello"
     namespace :api do
       namespace :v1 do
+        get "api/v1/home#hello"
         post "/signup", to: "users#create"
         post "/login", to: "sessions#create"
         delete "/logout", to: "sessions#destroy"
