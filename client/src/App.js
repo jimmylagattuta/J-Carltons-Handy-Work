@@ -1,6 +1,9 @@
 import logo from './logo.jpg';
 import heroImage from './patio.jpg';
+import stampImage from './stamp.png';
 import './App.css';
+
+import { Link } from 'react-router-dom';
 
 function App() {
     return (
@@ -50,6 +53,36 @@ function App() {
                     </div>
                 </div>
             </header>
+            <div className='home-contact-section'>
+                <div className='contact-image-container'>
+                    <img src={stampImage} alt='' className='contact-image' />
+                </div>
+                <div className='contact-section-info'>
+                    <h2 className='contact-info-title'>Talk To Our Team</h2>
+                    <p className='contact-info-text'>
+                        If you’d like to book or enquire about one of our
+                        services, get in touch with our handyman experts:
+                    </p>
+                    <div className='contact-info-icons'>
+                        <div className='contact-icon-container'>
+                            <div className='contact-icon'></div>
+                            <div className='contact-icon-info'>
+                                <a href='' className='contact-info-link'>
+                                    youremail@mail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div className='contact-icon-container'>
+                            <div className='contact-icon'></div>
+                            <div className='contact-icon-info'>
+                                <a href='' className='contact-info-link'>
+                                    (555) 555-5555
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <footer className='main-footer'>
                 <div className='footer-links'>
                     <div className='footer-column'>
@@ -102,8 +135,32 @@ function App() {
                     </div>
                 </div>
                 <div className='footer-socials'>
-                    <div className='footer-icons'></div>
-                    <div className='footer-apps'></div>
+                    <div className='footer-icons'>
+                        <div className='social-icon'>
+                            <i class='fab fa-facebook-square'></i>
+                        </div>
+                        <div className='social-icon'>
+                            <i class='fab fa-instagram'></i>
+                        </div>
+                        <div className='social-icon'>
+                            <i class='fab fa-youtube'></i>
+                        </div>
+                        <div className='social-icon'>
+                            <i class='fab fa-linkedin'></i>
+                        </div>
+                    </div>
+                    <div className='footer-apps'>
+                        <img
+                            src='https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg'
+                            alt=''
+                            className='footer-app-image'
+                        />
+                        <img
+                            src='https://lh3.googleusercontent.com/RyLoNcOmb91IxHIP9NWfC82chbsCsT-5R25efns1FmuM8xz6znE4CRjIEBosZ1FH2xG1UqH6Axyp-vPFnm4sazbrsaB-S0QT_cN9uWU9UKoSQYCjYQ=s0'
+                            alt=''
+                            className='footer-app-image'
+                        />
+                    </div>
                 </div>
                 <div className='footer-info'>
                     <p className='footer-text'>
