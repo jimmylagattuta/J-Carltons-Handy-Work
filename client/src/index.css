@@ -11,9 +11,23 @@ body {
         'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    background: #242120;
+    color: white;
+    line-height: 1.5;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: blue;
+    padding: 15px 50px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
 }

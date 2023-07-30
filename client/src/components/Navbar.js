@@ -1,22 +1,34 @@
-import React from 'react';
+import logo from '../assets/logo.jpg';
 
 const Navbar = () => {
-  return (
-    <nav style={{ backgroundColor: '#f0f0f0', padding: '10px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-      <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-        {/* Move the logo above and float it to the left */}
-        <img src="CarltonLogo.jpg" alt="Logo" style={{ height: '40px', marginBottom: '10px' }} />
-        <span style={{ fontSize: '14px', fontWeight: 'bold' }}>J Carlon's Handy Work</span>
-      </div>
-      <div>
-        {/* Add other navigation items on the right side */}
-        {/* For example: */}
-        <a href="/" style={{ margin: '0 10px' }}>Home</a>
-        <a href="/about" style={{ margin: '0 10px' }}>About</a>
-        <a href="/contact" style={{ margin: '0 10px' }}>Contact</a>
-      </div>
-    </nav>
-  );
+    return (
+        <nav className='main-nav'>
+            <div className='nav-left'>
+                <div className='logo-container'>
+                    <a href='' className='logo-link'>
+                        <img src={logo} alt='' className='logo-image' />
+                    </a>
+                </div>
+                <div className='links'>
+                    <a href='' className='nav-liink'>
+                        about
+                    </a>
+                    <a href='' className='nav-liink'>
+                        contact
+                    </a>
+                    <a href='' className='nav-liink'>
+                        services
+                    </a>
+                    <a href='' className='nav-liink'>
+                        location
+                    </a>
+                </div>
+            </div>
+            <div className='sign-in'>
+                <i class='fas fa-shopping-cart'></i>
+            </div>
+        </nav>
+    );
 };
 
 export default Navbar;
