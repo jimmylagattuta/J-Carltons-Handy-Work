@@ -69,6 +69,10 @@ input {
     margin: 35px 0;
 }
 
+.best-seller-button {
+    background-color: var(--red);
+}
+
 .section-container {
     padding: 40px 20px;
     max-width: 2000px;
@@ -83,6 +87,21 @@ input {
 
 .best-seller-title {
     margin: 15px 0 0 0;
+    position: relative;
+    display: inline-block;
+}
+
+.best-seller-title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--red);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
 
 .best-seller-item {
@@ -93,15 +112,25 @@ input {
 .best-seller-image {
     background-image: url('https://j-carltons.herokuapp.com/static/media/patio.b0e17dd447b20cec1826.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 250%;
     background-position: center center;
     width: 100%;
     height: 350px;
+    transition: all 0.3s ease-in-out;
+}
+
+.best-seller-item:hover .best-seller-image {
+    background-size: 300%;
+}
+
+.best-seller-item:hover .best-seller-title::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .featured-section {
     height: 450px;
-    background-color: #20377d;
+    background-color: var(--blue);
     display: flex;
     flex-wrap: wrap;
 }

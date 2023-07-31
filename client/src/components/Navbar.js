@@ -1,5 +1,7 @@
 import logo from '../assets/logo.jpg';
 
+import './Navbar.css';
+
 const Navbar = () => {
     return (
         <nav className='main-nav'>
@@ -25,7 +27,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='sign-in'>
-                <i class='fas fa-shopping-cart'></i>
+                <i className='fas fa-shopping-cart'></i>
             </div>
         </nav>
     );

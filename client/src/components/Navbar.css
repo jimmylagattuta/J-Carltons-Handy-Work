@@ -1,0 +1,32 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background: #242120;
+    align-items: center;
+    padding: 5px 30px;
+    overflow-x: auto;
+}
+
+.nav-liink {
+    color: white;
+    margin: 0 35px 0 0;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.sign-in {
+    border-left: 2px solid white;
+    padding: 0 0 0 25px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    display: block;
+    width: 70px;
+    margin: 0 35px 0 0;
+}
