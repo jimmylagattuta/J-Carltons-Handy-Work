@@ -8,11 +8,16 @@
     overflow-x: auto;
 }
 
-.nav-liink {
+.nav-link {
     color: white;
     margin: 0 35px 0 0;
     text-transform: capitalize;
     text-decoration: none;
+}
+
+.nav-link.active {
+    color: var(--red);
+    font-weight: bold;
 }
 
 .sign-in {
