@@ -35,3 +35,22 @@
     width: 70px;
     margin: 0 35px 0 0;
 }
+
+.cart-icon-wrapper {
+    position: relative;
+}
+
+.cart-item-counter {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}

@@ -1,9 +1,13 @@
 import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from './CartContext';
 import logo from '../assets/logo.jpg';
 
 import './Navbar.css';
 
 const Navbar = () => {
+    const { cartCarlton } = useContext(CartContext);
+
     return (
         <nav className='main-nav'>
             <div className='nav-left'>
@@ -53,7 +57,14 @@ const Navbar = () => {
                     className={(isActive) =>
                         'nav-link' + (!isActive ? ' unselected' : '')
                     }>
-                    <i className='fas fa-shopping-cart'></i>
+                    <span className='cart-icon-wrapper'>
+                        {cartCarlton?.cartItems.length > 0 && (
+                            <span className='cart-item-counter'>
+                                {cartCarlton.cartItems.length}
+                            </span>
+                        )}
+                        <i className='fas fa-shopping-cart'></i>
+                    </span>
                 </NavLink>
             </div>
         </nav>

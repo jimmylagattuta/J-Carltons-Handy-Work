@@ -61,7 +61,7 @@ input {
 
 .best-seller-section {
     background-color: white;
-    color: black;
+    color: var(--black);
 }
 
 .best-seller-button-container {
@@ -163,10 +163,15 @@ input {
 
 .home-contact-section {
     background-color: #ecf2f8;
-    color: black;
+    color: var(--black);
     display: flex;
     padding: 100px 40px;
     flex-wrap: wrap;
+}
+
+.button.update-button {
+    padding: 10px 60px;
+    margin: 0 0 0 30px;
 }
 
 .contact-image-container {

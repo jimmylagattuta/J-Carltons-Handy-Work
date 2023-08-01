@@ -1,9 +1,14 @@
 import heroImage from '../../assets/patio.jpg';
 import stampImage from '../../assets/stamp.png';
 import featuredImage from '../../assets/services.jpg';
+
+import { useContext } from 'react';
+import { CartContext } from '../../components/CartContext';
 import './Home.css';
 
 const Home = () => {
+    const { addCartItem, cartCarlton } = useContext(CartContext);
+
     return (
         <div className='App'>
             <header
@@ -31,6 +36,14 @@ const Home = () => {
                         <div className='best-seller-item'>
                             <div className='best-seller-image'></div>
                             <h3 className='best-seller-title'>Service</h3>
+                            <button
+                                className='button update-button'
+                                onClick={() => {
+                                    addCartItem(123);
+                                }}>
+                                <i className='fas fa-plus'></i>
+                                {cartCarlton ? cartCarlton.cartItems.length : 0}
+                            </button>
                         </div>
                         <div className='best-seller-item'>
                             <div className='best-seller-image'></div>

@@ -1,6 +1,8 @@
 :root {
     --blue: #20377d;
     --red: #e34e50;
+    --white: #fff;
+    --black: #262221;
 }
 
 .min-height {
@@ -8,5 +10,5 @@
     padding: 30px;
     font-size: 40px;
     background-color: white;
-    color: black;
+    color: var(--black);
 }
